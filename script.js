@@ -62,7 +62,10 @@ function loadProgress() {
               }, 5030)
             }, 1000);
             setTimeout(() => {
-              let start = 11;
+              let collide = document.createElement("audio");
+              collide.src = "Collide.mp3";
+              collide.play();
+              let start = 32;
               let end = 0;
               let ulang = setInterval(() => {
                 start--;
