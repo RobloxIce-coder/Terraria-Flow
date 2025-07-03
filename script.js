@@ -63,7 +63,7 @@ function loadProgress() {
             }, 1000);
             setTimeout(() => {
               let collide = document.createElement("audio");
-              collide.src = "Collide.mp3";
+              collide.src = "https://audio.jukehost.co.uk/4iHeFEElgPfhMjyUQpK2cNBh0D0jf5V7";
               collide.play();
               let start = 32;
               let end = 0;
