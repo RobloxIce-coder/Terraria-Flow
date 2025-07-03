@@ -84,7 +84,7 @@ function loadProgress() {
                   setTimeout(
                     () => {
                       window.location.href = "https://quis-pertanyaan-v1.vercel.app/";
-                    }, 5000
+                    }, 1500
                   )
                 }
               }, 1000)
