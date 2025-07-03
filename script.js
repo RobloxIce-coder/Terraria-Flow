@@ -83,7 +83,7 @@ function loadProgress() {
                   teks_notif.textContent = `Sampai jumpa lagi! 👋`;
                   setTimeout(
                     () => {
-                      window.location.href = "https://RobloxIce-coder.github.io/mydemowebsite1";
+                      window.location.href = "https://quis-pertanyaan-v1.vercel.app/";
                     }, 5000
                   )
                 }
