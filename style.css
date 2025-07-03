@@ -1,0 +1,290 @@
+body {
+  background-color: lime;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("Pemandangan.jpg");
+  background-size: 200%;
+}
+
+.progress-bar-wrapper {
+  width: 300px;
+  height: 20px;
+  border: 5px solid black;
+  border-radius: 30px;
+  box-shadow: 0 0 0px 3px rgba(57, 71, 227, 0.5);
+}
+
+.progress-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #C68CCE;
+  border-radius: 10px 10px 10px 10px;
+  transition: width 0.5s;
+  background-image: url("Gelembung.jpg");
+  background-size: 100%;
+}
+
+.progress-text {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
+  color: white;
+}
+
+#load {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#judul {
+  white-space: nowrap;
+  font-size: 30px;
+}
+
+#gambar {
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  left: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  display: block;
+  animation: keren 5s ease-in-out 0s 1 normal paused;
+}
+
+#tombol {
+  width: 65px;
+  height: 30px;
+  font-size: 18px;
+  transition: all 0.3s;
+  background-color: #0DC2FF;
+  color: white;
+  border-radius: 10px;
+  animation: terlihat 10s ease-in-out 0s 1 alternate;
+  animation-play-state: paused;
+}
+
+#tombol:hover {
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #ACD3F7;
+}
+
+#notif {
+  width: 300px;
+  height: 100px;
+  display: none;
+  background-color: deepskyblue;
+  z-index: 2;
+  position: absolute;
+  top: 170px;
+  right: 30px;
+  border: 3px solid lightblue;
+  border-radius: 10px;
+  animation: trans 1.5s ease-in-out 0s 0.5;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+#teks-notif {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  animation: teks 5s ease-in-out 0s infinite paused;
+}
+
+#dalam {
+  background-color: lime;
+  color: black;
+  text-align: center;
+  font-size: large;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  width: 70%;
+  height: 0%;
+  border-radius: 10px;
+}
+
+@keyframes teks {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes trans {
+  5% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  55% {
+    opacity: 1;
+    visibility: visible;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+
+@keyframes terlihat {
+  5% {
+    opacity: 0;
+    visibility: visible;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0.7;
+  }
+  55% {
+    opacity: 0.9;
+  }
+  58% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  63% {
+    opacity: 0.5;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  68% {
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  73% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 1;
+  }
+  77% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes keren {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  65%{
+    opacity: 0.3;
+  }
+  70%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0.3;
+  }
+  80%{
+    opacity: 0.5;
+    transform: rotateY(180deg);
+  }
+  90%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+#load {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#load::after {
+  content: '';
+  animation: dots 3s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  80% {
+    content: '..';
+  }
+  100% {
+    content: '.';
+  }
+}
