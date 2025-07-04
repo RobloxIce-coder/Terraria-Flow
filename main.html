@@ -6,6 +6,8 @@
   <title>🥰Kyaaaaaaa Kawaiii...</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="icon" type="image/jpg" href="https://i.imghippo.com/files/tBEY5513zFk.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
 </head>
 <body>
   <div class="progress-bar-container">
@@ -40,5 +42,20 @@
     <audio src="Bubble.mp3" id= "bubble"></audio>
   </div>
   <script src="script.js"></script>
+  <script>
+  let wow = document.createElement("audio");
+  wow.src = "Wow.mp3";
+  $(document).ready(function() {
+    $("#gambar").click(function(event) {
+      $(this).attr("src", "Anin.jpg");
+      wow.play();
+      setTimeout(
+        () => {
+          $("#gambar").attr("src", "Cantik.jpg");
+        }, 10000
+      )
+    });
+ })
+  </script>
 </body>
-</html>
+                                                                                                                                                         </html>
