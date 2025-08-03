@@ -288,3 +288,27 @@ body {
     content: '.';
   }
 }
+
+.love {
+  animation: cinta 0.3s ease-in-out 0s infinite !important;
+}
+
+@keyframes cinta {
+  0% {
+    transform: scale(1);
+    color: #ff69b4;
+  }
+  50% {
+    transform: scale(1.5);
+    color: #ff99cc;
+  }
+  100% {
+    transform: scale(1);
+    color: #ff69b4;
+  }
+}
+
+
+#hak-cipta {
+  font-style: italic;
+}
