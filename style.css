@@ -39,9 +39,9 @@ body {
 }
 
 #load {
-  color: black;
+  color: white;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 #judul {
