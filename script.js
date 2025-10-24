@@ -1,3 +1,5 @@
+// script.js
+
 let progressBar = document.getElementById('progress-bar');
 let progressText = document.getElementById('progress-text');
 let loadText = document.getElementById('load');
@@ -38,6 +40,11 @@ function loadProgress() {
           tombol.style.animationPlayState = "running";
           tombol.addEventListener("click", function() {
             let teks_notif = document.querySelector("#teks-notif");
+            let nativeUI = document.createElement("meta");
+            nativeUI.name = "themeColor";
+            nativeUI.content = "deepskyblue";
+            document.body.appendChild(nativeUI);
+            
             setTimeout(
               () => {
                 bubble.play();
