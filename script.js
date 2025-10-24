@@ -43,7 +43,7 @@ function loadProgress() {
             let nativeUI = document.createElement("meta");
             nativeUI.name = "themeColor";
             nativeUI.content = "deepskyblue";
-            document.body.appendChild(nativeUI);
+            document.head.appendChild(nativeUI);
             
             setTimeout(
               () => {
