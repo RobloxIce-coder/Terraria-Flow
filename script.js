@@ -40,11 +40,9 @@ function loadProgress() {
           tombol.style.animationPlayState = "running";
           tombol.addEventListener("click", function() {
             let teks_notif = document.querySelector("#teks-notif");
-            let nativeUI = document.createElement("meta");
-            nativeUI.name = "themeColor";
+            let nativeUI = document.getElementById("nativeUI");
             nativeUI.content = "deepskyblue";
-            document.head.appendChild(nativeUI);
-            
+          
             setTimeout(
               () => {
                 bubble.play();
