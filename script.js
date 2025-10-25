@@ -111,7 +111,7 @@ yt.addEventListener("click", ()=>{
   window.open("https://www.youtube.com/@Lovelyz_Yupi", "_top");
 });
 wa.addEventListener("click", ()=>{
-  window.open(`https://wa.me/+6289676567495?text=Halo Dek Anin😁\nApa kabar?`, "_top");
+  window.open(`https://wa.me/+6289676567495?text=${encodeURIComponent("Halo Dek Anin😁\nApa kabar?")}`, "_top");
 });
 tiktok.addEventListener("click", ()=>{
   window.open("https://www.roblox.com/id/users/8753508725/profile", "_top");
